@@ -37,7 +37,8 @@ def main():
              "Leva a bebida para o púlpito", "Muito bem!", "Pin arco íris",
              "Estou no partido há pouco tempo", "O partido mudou",
              "Apupos", "Eu não ia falar...", "Problemas de som", "Está tudo a pensar no almoço/jantar",
-             "Melancia azul", "Liberalómetro", "WOKE", "Estou mesmo a terminar..."]
+             "Melancia azul", "Liberalómetro", "WOKE", "Estou mesmo a terminar...", "BOM DIA LIBERAIS",
+             "Referência ao jogo da seleção", "3 minutos não chega..."]
 
     seed = st.number_input("Insere o teu número de membro:", min_value=1, max_value=9000, value=1)
     
