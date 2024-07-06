@@ -55,9 +55,6 @@ def main():
     if result:
         st.success(result)
     
-    # Display the board with checkboxes aligned
-    board_df = pd.DataFrame(board)
-    st.table(board_df)
 
 if __name__ == "__main__":
     main()
