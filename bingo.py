@@ -24,13 +24,19 @@ def check_bingo(board, checked):
 def main():
     st.title("Bingo da VIII Convenção Nacional")
 
-    words = ["Inerências", "Verdadeiramente/realmente liberal", "Burocracia",
+    words = ["Inerências", "Verdadeiramente liberal", "Burocracia",
              "Comité central", "Transparência", "Eu não sou jurista, mas...",
              "Delegados", "Separação de poderes", "José Cardoso",
              "Babuje", "RGPD", "Subscritores", "Distritais",
              "'Jota' ou 'Juventude' da IL", "Portal do Membro", "Órgão Máximo",
              "O partido é como uma empresa", "O partido é como o estado",
-             "Salários", "Partilha de contactos", "Co-criação"]
+             "Salários", "Partilha de contactos", "Co-criação", "Realmente liberal"
+             "Quórum", "Tens de terminar", "Ratificar", "Quotas",
+             "Observador", "Alguém no zoom não aparece", "Viva Portugal, Viva a Iniciativa Liberal",
+             "Leva a bebida para o púlpito", "Muito bem!", "Pin arco íris",
+             "Estou no partido há pouco tempo", "O partido mudou",
+             "Apupos", "Eu não ia falar...", "Problemas de som", "Está tudo a pensar no almoço/jantar",
+             "Melancia azul", "Liberalómetro", "WOKE", "Estou mesmo a terminar..."]
 
     seed = st.number_input("Insere o teu número de membro:", min_value=1, max_value=9000, value=1)
     
