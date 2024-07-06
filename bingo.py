@@ -7,7 +7,7 @@ def generate_bingo_board(words, seed):
     random.shuffle(words)
     return [words[i * 5:(i + 1) * 5] for i in range(5)]
 
-def check_bingo(board, checked):
+def check_bingo(checked):
     # Check rows
     for row in range(5):
         if all(checked[row]):
@@ -43,16 +43,24 @@ def main():
     board = generate_bingo_board(words, seed)
     
     checked = [[False] * 5 for _ in range(5)]
-    cols = st.columns(5)
-    
-    for i in range(5):
-        for j in range(5):
-            if cols[j].checkbox(board[i][j], key=f"{i}-{j}"):
-                checked[i][j] = True
 
-    result = check_bingo(board, checked)
+    def create_checkboxes():
+        for i in range(5):
+            cols = st.columns(5)
+            for j in range(5):
+                if cols[j].checkbox(board[i][j], key=f"{i}-{j}"):
+                    checked[i][j] = True
+
+    create_checkboxes()
+
+    result = check_bingo(checked)
     if result:
         st.success(result)
+    
+    # Display the board with checkboxes
+    board_df = pd.DataFrame(board)
+    st.table(board_df)
 
 if __name__ == "__main__":
     main()
+
