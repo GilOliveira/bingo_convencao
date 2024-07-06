@@ -1,3 +1,4 @@
+
 import streamlit as st
 import random
 import pandas as pd
@@ -30,7 +31,7 @@ def main():
              "Babuje", "RGPD", "Subscritores", "Distritais",
              "'Jota' ou 'Juventude' da IL", "Portal do Membro", "Órgão Máximo",
              "O partido é como uma empresa", "O partido é como o estado",
-             "Salários", "Partilha de contactos", "Co-criação", "Realmente liberal"
+             "Salários", "Partilha de contactos", "Co-criação", "Realmente liberal",
              "Quórum", "Tens de terminar", "Ratificar", "Quotas",
              "Observador", "Alguém no zoom não aparece", "Viva Portugal, Viva a Iniciativa Liberal",
              "Leva a bebida para o púlpito", "Muito bem!", "Pin arco íris",
@@ -44,23 +45,19 @@ def main():
     
     checked = [[False] * 5 for _ in range(5)]
 
-    def create_checkboxes():
-        for i in range(5):
-            cols = st.columns(5)
-            for j in range(5):
-                if cols[j].checkbox(board[i][j], key=f"{i}-{j}"):
-                    checked[i][j] = True
-
-    create_checkboxes()
+    # Create the bingo board with checkboxes in a table format
+    for i in range(5):
+        cols = st.columns(5)
+        for j in range(5):
+            checked[i][j] = cols[j].checkbox(board[i][j], key=f"{i}-{j}")
 
     result = check_bingo(checked)
     if result:
         st.success(result)
     
-    # Display the board with checkboxes
+    # Display the board with checkboxes aligned
     board_df = pd.DataFrame(board)
     st.table(board_df)
 
 if __name__ == "__main__":
     main()
-
