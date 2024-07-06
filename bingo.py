@@ -22,14 +22,17 @@ def check_bingo(board, checked):
     return ""
 
 def main():
-    st.title("Bingo Game")
+    st.title("Bingo da VIII Convenção Nacional")
 
-    words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew", 
-             "kiwi", "lemon", "mango", "nectarine", "orange", "papaya", "quince", "raspberry",
-             "strawberry", "tangerine", "ugli fruit", "vanilla", "watermelon", "xigua", "yam",
-             "zucchini", "jackfruit"]
+    words = ["Inerências", "Verdadeiramente/realmente liberal", "Burocracia",
+             "Comité central", "Transparência", "Eu não sou jurista, mas...",
+             "Delegados", "Separação de poderes", "José Cardoso",
+             "Babuje", "RGPD", "Subscritores", "Distritais",
+             "'Jota' ou 'Juventude' da IL", "Portal do Membro", "Órgão Máximo",
+             "O partido é como uma empresa", "O partido é como o estado",
+             "Salários", "Partilha de contactos", "Co-criação"]
 
-    seed = st.number_input("Enter a numeric seed (1-10000):", min_value=1, max_value=10000, value=1)
+    seed = st.number_input("Insere o teu número de membro:", min_value=1, max_value=9000, value=1)
     
     board = generate_bingo_board(words, seed)
     
