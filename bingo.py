@@ -23,7 +23,7 @@ def check_bingo(checked):
     return ""
 
 def main():
-    st.title("Bingo da IX Convenção Nacional")
+    st.image('./bingo_pic.png')
 
     words = ["Inerências", "Verdadeiramente liberal", "Burocracia", "Isso é socialista!",
              "Comité central", "Transparência", "Eu não sou jurista, mas...",
