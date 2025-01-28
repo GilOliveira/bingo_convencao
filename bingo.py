@@ -41,7 +41,7 @@ def main():
               "3 minutos não chega...", "Camaradas...", "Unidos AO Liberalismo", "Tantas listas!",
               "Não sou candidato/a...", "Javier Milei", "Assino por baixo", "Autonomia dos núcleos"]
 
-    seed = st.number_input("Insere o teu número de membro:", min_value=1, max_value=9000, value=1)
+    seed = st.number_input("Insere o teu número de membro:", min_value=1, max_value=10000, value=1)
     
     board = generate_bingo_board(words, seed)
     
