@@ -9,6 +9,9 @@ def generate_bingo_board(words, seed):
     return [words[i * 5:(i + 1) * 5] for i in range(5)]
 
 def check_bingo(checked):
+    # Check for Bingo
+    if all(all(row) for row in checked):
+        return "BINGO!"
     # Check rows
     for row in range(5):
         if all(checked[row]):
@@ -17,9 +20,6 @@ def check_bingo(checked):
     for col in range(5):
         if all(checked[row][col] for row in range(5)):
             return "Linha!"
-    # Check for Bingo
-    if all(all(row) for row in checked):
-        return "BINGO!"
     return ""
 
 def main():
