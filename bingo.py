@@ -44,7 +44,7 @@ def main():
             "Falta de união", "O partido está estagnado", "Analogia que ninguém percebe", "Tenho pouco tempo",
             "Micro a 1 km da cara", "Agregador", "Eu nem era para a intervir", "Viva a liberdade, carago",
             "Nepotismo", "Asua não ter lido a MEG", "Também não concordo com tudo", "Referência soviética/marxista",
-            "País está a ver-nos", "Boca da Natascha Santos", "O ÍLE", "Viva Portugal, Viva a IL",
+            "País está a ver-nos", "Boca da Natacha Santos", "O ÍLE", "Viva Portugal, Viva a IL",
             "Nós somos diferentes", "Já se faz tarde", "Generaliza o eleitorado", "Diferentes sensibilidades/formas de pensar/alas",
             'Eu não gosto do termo "alas"', "Seguidismo", "Liberais clássicos", "Temos que perceber oq ue é o CN", "Aportar",
             "O Iniciativa Liberal", "Liberais expulsos", "Carla Castro", "GTE", "Tem medo de aparecer no RAP", "Pujante",
