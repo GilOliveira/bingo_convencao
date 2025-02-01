@@ -30,9 +30,9 @@ def main():
              "Delegados", "Separação de poderes", "José Cardoso", "Encostem-me à parede!",
              "Malas", "Distritais", "Empoderar o Membro", "Microfone dá feedback",
              "'Jota' da IL", "Portal do Membro", "Órgão Máximo", "Assinaturas", "Freguesias",
-             "O partido é como...", "Carlos Moedas", "Salários", "Nepotismo", "Realmente liberal", "Elon Musk", "Fechem as portas!"
+             "O partido é como...", "Carlos Moedas", "Salários", "Nepotismo", "Realmente liberal", "Elon Musk", "Fechem as portas!",
              "Quórum", "Tens de terminar...", "Motoserra", "AFUERA!", "15%", "Unir o partido",
-             "Observador", "Alguém no zoom não aparece", "Wokismo", "Aplauso do aviso para almoço/jantar"
+             "Observador", "Alguém no zoom não aparece", "Wokismo", "Aplauso do aviso para almoço/jantar",
              "Leva a bebida para o púlpito", "Pin arco íris", "Introduzir o membro", 
              "Estou no partido há pouco tempo", "O partido mudou!", "Liberal em toda a linha",
              "Apupos", "Eu não ia falar, mas...", "Problemas de som", "Está tudo a pensar no almoço/jantar",
